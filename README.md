@@ -42,3 +42,27 @@ Se esperan las siguientes funcionalidades para el prototipo
   * *NEW*: cuando se agregan nuevas funcionaliades. 
   * *MOD*: cuando se modifican funcionalidades existentes. 
   * *FIX*: cuando se arreglan errores ya existentes. 
+
+## Que es un Linter:
+
+### un linter es un instrumento que va analizar tu código fuente para determinar si existe alguna inconsistencia. Esta inconsistencia puede ir desde una simple evaluación de estándares de código hasta un debugueo del mismo.
+
+### Tipos de análisis que proveen los Linters
+### Hay numerosos tipos de linters para cada función, entre las cuales se encuentran:
+
+### Los analizadores de errores de sintaxis:
+### Son  uno de los más importantes en el desarrollo. Estos linters van a realizar una verificación de que no exista un posible error sintáctico en el código fuente.
+
+### Los analizadores de adhesión a los estándares de código de la empresa:
+### Es un linter que evalúa que el código esté cumpliendo la estandarización ahorrará tiempo.
+### Evalúan de que existan espacios entre los símbolos de comparación, incluso evalúa el nombre de la función o de las variables para verificar que estén escritas de la mejor manera.
+
+### Analizador de potenciales problemas(“Code Smells”):
+### Evalúan si hay duplicidades de códigos o posibles problemas de arquitectura de códigos.
+
+### Analizador de seguridad:
+### Los linters también se puede configurar para que sean versátiles verificadores de seguridad en el código y se eviten posibles poblemas legales a futuro.
+
+## LINK DIAGRAMA:
+
+### https://drive.google.com/file/d/1H7n_CCR33fDqgmVqfiil0Mx9nLcdmPp-/view?usp=sharing.
