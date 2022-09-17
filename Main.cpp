@@ -21,8 +21,8 @@ void mostrarMenuPropietario(Sistema &sistema) {
 
         default:
             break;
-    }
 
+}
 }
 
 void mostrarMenuHuesped(Sistema& sistemita) {

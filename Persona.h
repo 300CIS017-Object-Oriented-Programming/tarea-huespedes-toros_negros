@@ -18,14 +18,26 @@ class Persona{
         long id;
         string name;
         string sex;
+        string nacimiento;
         int points;
 
     public:
 
         Persona();
-        Persona(long id2, string name2, string sex2, int points2);
+        Persona(long id2, string name2, string sex2, string nacimiento2, int points2);
 
         void mostrarPersona();
+
+        long getId() const;
+        string &getName() const;
+        string &getSex() const ;
+        string &getNacimiento() const;
+
+
+        void setId(const long id);
+        void setName(const string name);
+        void setSex(const string sex);
+        void setNacimiento(const string nacimiento);
 
 };
 
