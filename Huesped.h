@@ -15,11 +15,15 @@ class Huesped : public Persona{
 
     public:
 
+        Huesped();
+        Huesped(string info, string ciudad);
+
         string &getInfoClinica() const;
         string &getCiudadFamiliar() const;
 
-        void setInfoClinica(const string);
-        void setCiudadFamiliar(const string);
+        void mostrarHuesped();
+        void setInfoClinica(const string info);
+        void setCiudadFamiliar(const string ciudad);
 };
 
 #endif //TAREA_HUESPEDES_TOROS_NEGROS_HUESPED_H
