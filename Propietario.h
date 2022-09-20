@@ -1,8 +1,28 @@
-//
-// Created by orduz on 15/09/2022.
-//
-
 #ifndef TAREA_HUESPEDES_TOROS_NEGROS_PROPIETARIO_H
 #define TAREA_HUESPEDES_TOROS_NEGROS_PROPIETARIO_H
 
+#include "Hogar.h"
+#include "Persona.h"
+
+class Propietario: public Persona{
+
+    private:
+        Hogar *hogar;
+        bool disponibilidadPropietario;
+
+    public:
+        Propietario();
+        Propietario(bool disponibilidad, Hogar *hogar);
+
+        bool getDisponibilidadPropietario() const;
+        Hogar *getHogar() const;
+
+        void mostrarPropietarios();
+        void setDisponibilidadPropietario(const bool disponibilidad);
+        void setHogar(const Hogar *hogar);
+
+        void cambiarEstado();
+        void calcularPuntaje();
+
+};
 #endif //TAREA_HUESPEDES_TOROS_NEGROS_PROPIETARIO_H
