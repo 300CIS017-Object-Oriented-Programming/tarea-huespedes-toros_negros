@@ -8,6 +8,11 @@
 #include<unordered_map>
 #include<vector>
 
+#include "Persona.h"
+#include "Hogar.h"
+#include "Reserva.h"
+#include "Evaluacion.h"
+
 using std::vector;
 using std::unordered_map;
 
@@ -20,7 +25,7 @@ class Sistema{
         vector<Reserva*> reservas;
         vector<Evaluacion*> evaluaciones;
 
-    private:
+    public:
 
         void agregarEvaluaciones();
         void agregarPropietario();
