@@ -1,44 +1,38 @@
-//
-// Created by orduz on 15/09/2022.
-//
-
 #include "Huesped.h"
+using std::cin;
+using std::cout;
+using std::string;
+using std::endl;
 
 Huesped::Huesped() {
-
     infoClinica = "";
     ciudadFamiliar = "";
 }
 
 Huesped::Huesped(string info, string ciudad) {
-
     infoClinica = info;
     ciudadFamiliar = ciudad;
 }
 
 void Huesped::mostrarHuesped() {
-
     mostrarPersona();
-
-    cout<<"información clinica: "<<infoClinica<<endl;
-    cout<<"ciudad de la familia: "<<ciudadFamiliar<<endl;
+    cout<<"- Información clinica: "<<infoClinica<<endl;
+    cout<<"- Ciudad de la familia: "<<ciudadFamiliar<<endl;
 }
 
-string &Huesped::getInfoClinica() const {
+const string &Huesped::getInfoClinica() const {
     return infoClinica;
 }
 
-string &Huesped::getCiudadFamiliar() const {
+const string &Huesped::getCiudadFamiliar() const {
     return ciudadFamiliar;
 }
 
-void Huesped::setInfoClinica(const string info) {
-
+void Huesped::setInfoClinica(const string &info){
     infoClinica = info;
 }
 
-void Huesped::setCiudadFamiliar(const string ciudad) {
-
+void Huesped::setCiudadFamiliar(const string &ciudad) {
     ciudadFamiliar = ciudad;
 }
 

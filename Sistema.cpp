@@ -1,46 +1,42 @@
-//
-// Created by orduz on 15/09/2022.
-//
-
 #include "Sistema.h"
+#include "Hogar.h"
 #include <iostream>
-#include <cstdio>
+using std::cout;
+using std::cin;
+using std::endl;
+
 
 void Sistema::agregarPropietario() {
-
     long id;
     string name;
     string sex;
     string nacimiento;
     int points = 0, pregunta;
-    new Hogar *hogar;
+    Hogar *hogar;
     bool disponibilidad;
 
-    cout<<"ingrese el id:"<<endl;
+    cout<<"Ingrese el id:"<<endl;
     cin>>id;
 
-    cout<<"ingrese el nombre:"<<endl;
+    cout<<"Ingrese el nombre:"<<endl;
     cin.ignore();
     getline(cin, name);
 
-    cout<<"ingrese el sexo:"<<endl;
-    getline(cin, sexo);
+    cout<<"Ingrese el sexo:"<<endl;
+    getline(cin, sex);
 
-    cout<<"ingrese la fecha de nacimiento:"<<endl;
+    cout<<"Ingrese la fecha de nacimiento:"<<endl;
     getline(cin, nacimiento);
 
     Propietario::Persona(id, name,sex, nacimiento, points);
 
-    cout<<"tiene disponibilidad ?-> 1. para si, 2.para no";
+    cout<<"Tiene disponibilidad? -> 1.Para si, 2.Para no";
     cin>>pregunta;
 
     if(pregunta){
-
-        Propietario(hogar, true);
+        Propietario(true, hogar);
     }
-
     else{
-
-        Propietario(hogar, false);
+        Propietario(false, hogar);
     }
 }

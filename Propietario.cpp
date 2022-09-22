@@ -1,14 +1,17 @@
-
 #include "Propietario.h"
+using std::cout;
+using std::cin;
+using std::endl;
+
 
 Propietario::Propietario() {
-    *hogar = nullptr;
+    hogar = nullptr;
     disponibilidadPropietario = false;
 }
 
 Propietario::Propietario(bool disponibilidad, Hogar *hogar2) {
     disponibilidadPropietario = disponibilidad;
-    *hogar = hogar2;
+    hogar = hogar2;
 }
 
 void Propietario::mostrarPropietarios(){
@@ -21,7 +24,7 @@ void Propietario::mostrarPropietarios(){
     }
 }
 
-bool Propietario::getDisponibilidadPropietario(){
+bool Propietario::getDisponibilidadPropietario() const{
     return disponibilidadPropietario;
 }
 
@@ -29,7 +32,7 @@ void Propietario::setDisponibilidadPropietario(const bool  disponibilidad){
     disponibilidadPropietario = disponibilidad;
 }
 
-void Propietario::setHogar(const Hogar *hogar2) {
+void Propietario::setHogar(Hogar *hogar2) {
     hogar = hogar2;
 }
 

@@ -1,10 +1,7 @@
-//
-// Created by orduz on 15/09/2022.
-//
 #include "Persona.h"
+using namespace std;
 
 Persona::Persona() {
-
     id = 0;
     name = "";
     sex = "";
@@ -13,58 +10,49 @@ Persona::Persona() {
 }
 
 Persona::Persona(long id2, string name2, string sex2, string nacimiento2, int points2) {
-
     id = id2;
     name = name2;
     sex = sex2;
     nacimiento = nacimiento2;
     points = points2;
-
 }
 
 void Persona::mostrarPersona() {
-
-    cout<<"identificación: "<< id2 <<endl;
-    cout<<"nombre: "<< name <<endl;
-    cout<<"nacimiento: "<< nacimieto <<endl;
-    cout<<"puntaje: "<< points <<endl;
-
+    cout<<"- Identificación: "<< id <<endl;
+    cout<<"- Nombre: "<< name <<endl;
+    cout<<"- Nacimiento: "<< nacimiento <<endl;
+    cout<<"- Puntaje: "<< points <<endl;
 }
 
-long getId(){
-
+long Persona::getId() const{
     return id;
 }
 
-string &getName(){
-
+const string &Persona::getName() const {
     return name;
 }
 
-string &getSex(){
-
-    return sex:
+const string &Persona::getSex() const {
+    return sex;
 }
 
-string &getNacimiento() {
-
+const string &Persona::getNacimiento()const {
     return nacimiento;
 }
 
-void setId(const long id){
-
-
-    id = id;
+void Persona::setId(const long id2){
+    id = id2;
 }
-void setName(const string name){
 
-    name = name;
+void Persona::setName(const string &name2){
+    name = name2;
 }
-void setSex(const string sex){
 
-    sex = sex;
+void Persona::setSex(const string &sex2){
+    sex = sex2;
 }
-void setNacimiento(const string nacimiento){
 
-    nacimiento = nacimiento;
+void Persona::setNacimiento(const string &nacimiento2){
+    nacimiento = nacimiento2;
 }
+
