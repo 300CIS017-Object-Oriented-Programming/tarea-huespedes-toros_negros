@@ -19,9 +19,8 @@ class Reserva{
     public:
         Reserva();
         Reserva(string fechaInicio2, string fechaFin2,Propietario *propietario2, Huesped *huesped2);
-        virtual ~Reserva();
-        void mostrarReservas();
 
+        void mostrarReservas();
         const string &getFechaInicio() const;
         const string &getFechaFin() const;
         Propietario *getPropietario() const;

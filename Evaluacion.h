@@ -15,8 +15,8 @@ class Evaluacion{
 
     public:
         Evaluacion();
-        Evaluacion(int calificacion2, string comentariosEvaluacion2, string fechaEvaluacion2,Propietario *propietario2, Huesped *huesped2);
-        virtual ~Evaluacion(); // Destructor
+        Evaluacion(int calificacion2, string comentariosEvaluacion2, string fechaEvaluacion2);
+
         void mostrarEvaluaciones();
 
         int getCalificacion() const;

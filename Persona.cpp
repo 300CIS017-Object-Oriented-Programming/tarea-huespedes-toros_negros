@@ -18,7 +18,7 @@ Persona::Persona(long id2, string name2, string sex2, string nacimiento2, int po
 }
 
 void Persona::mostrarPersona() {
-    cout<<"- Identificación: "<< id <<endl;
+    cout<<"- Identificacion: "<< id <<endl;
     cout<<"- Nombre: "<< name <<endl;
     cout<<"- Nacimiento: "<< nacimiento <<endl;
     cout<<"- Puntaje: "<< points <<endl;

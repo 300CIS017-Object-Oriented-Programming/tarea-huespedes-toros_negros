@@ -11,15 +11,11 @@ Evaluacion::Evaluacion(){
     huesped = nullptr;
 }
 
-Evaluacion::Evaluacion(int calificacion2, string comentariosEvaluacion2, string fechaEvaluacion2,Propietario *propietario2, Huesped *huesped2){
+Evaluacion::Evaluacion(int calificacion2, string comentariosEvaluacion2, string fechaEvaluacion2){
     calificacion = calificacion2;
     comentariosEvaluacion = comentariosEvaluacion2;
     fechaEvaluacion = fechaEvaluacion2;
-
-    propietario = propietario2;
-    huesped = huesped2;
 }
-
 
 void Evaluacion::mostrarEvaluaciones(){
     cout<<"- Calificacion: "<<calificacion<<endl;
@@ -27,14 +23,15 @@ void Evaluacion::mostrarEvaluaciones(){
     cout<<"- Fecha de evaluacion: "<<fechaEvaluacion<<endl;
 }
 
-
 //GETS
 int Evaluacion::getCalificacion() const{
     return calificacion;
 }
+
 const string &Evaluacion::getComentariosEvaluacion() const{
     return comentariosEvaluacion;
 }
+
 const string &Evaluacion::getFechaEvaluacion() const{
     return fechaEvaluacion;
 }

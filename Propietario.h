@@ -13,7 +13,6 @@ class Propietario: public Persona{
     public:
         Propietario();
         Propietario(bool disponibilidad, Hogar *hogar);
-        virtual ~Propietario(); // Destructor
 
         bool getDisponibilidadPropietario() const;
         Hogar *getHogar() const;

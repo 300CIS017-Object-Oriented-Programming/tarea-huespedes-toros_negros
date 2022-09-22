@@ -14,14 +14,18 @@ using std::unordered_map;
 
 class Sistema{
     private:
-        unordered_map<int, Persona*> personas;
+        unordered_map<int, Propietario*> personas;
+        unordered_map<int, Huesped*> huespedes;
         unordered_map<string, Hogar*> hogares;
         vector<Reserva*> reservas;
-        vector<Evaluacion*> evaluaciones;
+        unordered_map<string, Evaluacion*> evaluaciones;
 
     public:
         void agregarEvaluaciones();
-        void agregarPropietario();
+        void agregarPersona();
+        void buscarPropietario(int id);
+        void buscarHuesped(int id);
+        void buscarEvaluacion(string name);
         void crearReservas();
 };
 #endif //TAREA_HUESPEDES_TOROS_NEGROS_SISTEMA_H

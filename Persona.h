@@ -17,9 +17,9 @@ class Persona{
         int points;
 
     public:
+
         Persona();
         Persona(long id2, string name2, string sex2, string nacimiento2, int points2);
-        virtual ~Persona(); // Destructor
 
         void mostrarPersona();
 

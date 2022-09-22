@@ -18,7 +18,6 @@ class Hogar{
     public:
         Hogar();
         Hogar(string direccion, int numeroCamas, bool alojaBebes2, string descripcion);
-        virtual ~Hogar(); // Destructor
         void mostrarHogar();
 
 

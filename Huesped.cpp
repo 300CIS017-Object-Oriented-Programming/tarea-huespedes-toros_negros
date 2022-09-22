@@ -16,7 +16,7 @@ Huesped::Huesped(string info, string ciudad) {
 
 void Huesped::mostrarHuesped() {
     mostrarPersona();
-    cout<<"- Información clinica: "<<infoClinica<<endl;
+    cout<<"- Informacion clinica: "<<infoClinica<<endl;
     cout<<"- Ciudad de la familia: "<<ciudadFamiliar<<endl;
 }
 
@@ -35,4 +35,3 @@ void Huesped::setInfoClinica(const string &info){
 void Huesped::setCiudadFamiliar(const string &ciudad) {
     ciudadFamiliar = ciudad;
 }
-

@@ -19,6 +19,7 @@ void Propietario::mostrarPropietarios(){
     if(disponibilidadPropietario){
         cout<<"Disponilibidad: Si"<<endl;
     }
+
     else{
         cout<<"Disponilibidad: No"<<endl;
     }
@@ -37,6 +38,7 @@ void Propietario::setHogar(Hogar *hogar2) {
 }
 
 void Propietario::cambiarEstado() {
+
     if(disponibilidadPropietario){
         disponibilidadPropietario = false;
     }
